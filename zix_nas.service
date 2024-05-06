@@ -1,0 +1,11 @@
+[Unit]
+Description=Mount NAS
+After=network.target
+
+[Service]
+ExecStart=/home/deck/Documents/scripts/nas_mount.sh
+User=root
+WorkingDirectory=/home/deck/Documents/scripts
+
+[Install]
+WantedBy=default.target
